@@ -30,4 +30,8 @@ function reverse2(str) {
     return arr.join('');
 }
 
+function reverse3(str) {
+    return arr.split('').reverse().join('');
+}
+
 module.exports = reverse;
