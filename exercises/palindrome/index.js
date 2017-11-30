@@ -8,6 +8,14 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
+  if (str < 2) {
+    return true;
+  }
+  return str[0] === str[str.length - 1]
+    ? palindrome(str.slice(1, str.length - 1))
+    : false;
+}
+function palindrome3(str) {
   return str.split("").every((char, idx) => {
     return char === str[str.length - idx - 1];
   });
