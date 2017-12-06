@@ -8,11 +8,7 @@
 function maxChar(str) {
   return str.split("").reduce(
     (a, i) => {
-      if (a[i]) {
-        a[i] = a[i] + 1;
-      } else {
-        a[i] = 1;
-      }
+      a[i] = a[i] ? a[i] + 1 : 1;
       a.max = a[i] > a[a.max] ? i : a.max;
       return a;
     },
