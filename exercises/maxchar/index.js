@@ -8,7 +8,7 @@
 function maxChar1(str) {
   return str.split("").reduce(
     (a, i) => {
-      a[i] = a[i]+1 || 1;
+      a[i] = a[i] + 1 || 1;
       a.max = a[i] > a[a.max] ? i : a.max;
       return a;
     },
@@ -17,15 +17,15 @@ function maxChar1(str) {
 }
 
 function maxChar(str) {
-    const charMap = {};
-    let maxChar = str[0];
+  const charMap = {};
+  let maxChar = str[0];
 
-    for (let char of str) {
-        charMap[char] = charMap[char] + 1 || 1;
-        maxChar = charMap[char] > charMap[maxChar] ? char : maxChar
-    }
+  for (let char of str) {
+    charMap[char] = charMap[char] + 1 || 1;
+    maxChar = charMap[char] > charMap[maxChar] ? char : maxChar;
+  }
 
-    return maxChar
+  return maxChar;
 }
 
 module.exports = maxChar;
