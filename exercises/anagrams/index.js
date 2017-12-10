@@ -9,11 +9,14 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
-    return toSortedString(stringA) === toSortedString(stringB);
+  return toSortedString(stringA) === toSortedString(stringB);
 }
 
 function toSortedString(str) {
-    return str.split('').sort().join('')
+  return str
+    .split("")
+    .sort()
+    .join("");
 }
 
 module.exports = anagrams;
