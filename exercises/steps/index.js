@@ -16,8 +16,16 @@
 //       '##  '
 //       '### '
 //       '####'
-
 function steps(n) {
+  for (var row = 0; row < n; row++) {
+    let str = "";
+    for (var col = 0; col < n; col++) {
+      str += col <= row ? "#" : " ";
+    }
+    console.log(str);
+  }
+}
+function steps1(n) {
   for (var i = 1; i <= n; i++) {
     let str = "";
     for (var j = 0; j < i; j++) {
