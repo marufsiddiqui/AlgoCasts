@@ -13,7 +13,16 @@
 //       '  #  '
 //       ' ### '
 //       '#####'
-
-function pyramid(n) {}
+//   pyramid(4)
+//       '   #   '
+//       '  ###  '
+//       ' ##### '
+//       '#######'
+function pyramid(n) {
+  for (var row = 0; row < n; row++) {
+    let str = "";
+    for (var col = 0; col < n + 2; col++) {}
+  }
+}
 
 module.exports = pyramid;
