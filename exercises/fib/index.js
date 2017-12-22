@@ -8,7 +8,7 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {
+function fib1(n) {
   let nums = [0, 1];
 
   for (var i = 2; i <= n; i++) {
@@ -17,8 +17,8 @@ function fib(n) {
 
   return nums[n];
 }
-function fib2(n) {
-  if (n === 0 || n === 1) {
+function fib(n) {
+  if (n < 2) {
     return n;
   }
   return fib(n - 1) + fib(n - 2);
