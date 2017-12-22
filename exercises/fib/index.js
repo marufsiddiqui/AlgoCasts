@@ -9,6 +9,19 @@
 //   fib(4) === 3
 
 function fib(n) {
+  let nums = [];
+
+  for (var i = 0; i <= n; i++) {
+    if (i === 0 || i === 1) {
+      nums.push(i);
+    } else {
+      nums.push(nums[i - 1] + nums[i - 2]);
+    }
+  }
+
+  return nums[n];
+}
+function fib2(n) {
   if (n === 0 || n === 1) {
     return n;
   }
